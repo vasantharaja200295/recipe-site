@@ -1,12 +1,20 @@
 import './App.css';
 import NavBar from './Components/NavBar';
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
+import Home from './Screens/Home';
+import Recipe from './Screens/Recipe';
+import Recipes from './Screens/Recipes';
 
 function App() {
   return (
-    <div>
-      <h1>App</h1>
+    <Router>
       <NavBar/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/recipes' element={<Recipes/>}/>
+        <Route path='/recipes/:name' element={<Recipe name="Pasta"/>}/>
+      </Routes>
+    </Router>
   );
 }
 
