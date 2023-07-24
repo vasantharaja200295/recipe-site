@@ -1,0 +1,87 @@
+.HomeContainer{
+    height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline:8% ;
+    padding-top:50px ;
+}
+
+.HeroSection{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e7e7e7;
+    border-radius: 40px;
+}
+
+.HeroImg{
+    height: 90%;
+    width: auto;
+}  
+
+.HeroText{
+    font-size: 34px;
+    line-height: 30px;
+}
+
+.HeroDes{
+    font-size: 22px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.ExploreBtn{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.ExploreContain{
+    height: 60px;
+    width: 190px;
+    background-color: #ff0e19;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.DataSection{
+    height: 80vh;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.TopRecipes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.FoodContiner{
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}

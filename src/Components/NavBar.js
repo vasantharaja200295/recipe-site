@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavBar.css'
+import menu from '../assets/menu.png'
 
 function NavBar() {
   return (
@@ -19,7 +20,7 @@ function NavBar() {
         </nav>
         <label htmlFor="nav_check" className="hamburger">
             <div>
-                <img src = "../assets/menu.png" alt='menu'/>
+                <img src = {menu} alt='menu' className='menu'/>
             </div>
         </label>
         

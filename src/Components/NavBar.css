@@ -49,6 +49,11 @@ nav ul li a:hover{
     color: aliceblue;
 }
 
+.menu{
+    height: 24px;
+    width: 24px;
+}
+
 .hamburger{
     display: none;
     height: fit-content;
