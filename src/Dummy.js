@@ -1,4 +1,4 @@
-export const foodData = {
+const data = {
     id:556177,
     title:"Ramen Noodle Coleslaw",
     readyInMinutes:15,
@@ -134,3 +134,6 @@ export const foodData = {
         }
       ],
 }
+
+
+export const foodData = [data];

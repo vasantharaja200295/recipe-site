@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20230726T170000
+DTEND;TZID=Asia/Kolkata:20230726T173000
+DTSTAMP:20230725T050621Z
+ORGANIZER;CN=megha.kishore@springworks.in:mailto:megha.kishore@springworks.
+ in
+UID:0cldqne7a0oden2gva2gkht9lo@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vasantharaja.r@springworks.in;X-NUM-GUESTS=0:mailto:vasantharaja.r@
+ springworks.in
+X-GOOGLE-CONFERENCE:https://meet.google.com/gpd-zfun-rvo
+X-MICROSOFT-CDO-OWNERAPPTID:272603886
+CREATED:20230725T050615Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/gp
+ d-zfun-rvo\nOr dial: (US) +1 585-308-1038 PIN: 446347848#\nMore phone numbe
+ rs: https://tel.meet/gpd-zfun-rvo?pin=5838091639928&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230725T050615Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Witty Wednesday's - Codenames !
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

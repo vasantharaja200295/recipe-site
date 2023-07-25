@@ -5,6 +5,8 @@ import bg_image from '../assets/food_background-transformed.png'
 import { Link } from 'react-router-dom'
 import next from '../assets/next.png'
 import FoodItem from '../Components/FoodItem'
+import { foodData } from '../Dummy'
+
 
 function Home() {
   return (
@@ -28,14 +30,15 @@ function Home() {
             <div className='TopRecipes'>
                 <h1 className='heading'>Top Recipes</h1>
                 <div className='FoodContiner'>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
-                    <FoodItem/>
+                    {
+                        foodData.map((recipe)=>{
+                            return(
+                                <Link to={"/recipe/"+recipe.id}>
+                                    <FoodItem data={recipe}/>
+                                </Link>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>
