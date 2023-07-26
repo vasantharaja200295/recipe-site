@@ -85,3 +85,10 @@
     flex-wrap: wrap;
     column-gap: 20px;
 }
+
+
+.FoodItemLinks{
+    text-decoration: none;
+    font-size: larger;
+    color: #1b1b1b;
+}

@@ -1,17 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import '../Global.css'
 import bg_image from '../assets/food_background-transformed.png'
 import { Link } from 'react-router-dom'
 import next from '../assets/next.png'
 import FoodItem from '../Components/FoodItem'
-import { foodData } from '../Dummy'
+import axios from 'axios'
 
 
 function Home() {
+
+    const [topRecipes, setTopRecipes] = useState([]);
+
+
+    const fetchTopRecipes = async () => {
+
+        const temp = localStorage.getItem('topRecipes');
+        if(temp){
+            setTopRecipes(JSON.parse(temp));
+        }else{
+            try {
+
+                const response = await axios.get(
+                  'https://api.spoonacular.com/recipes/random?apiKey=d0c921905eb148eca448cd8ab07de352&number=9'
+                );
+                const data = response.data; 
+                console.log(data);
+                setTopRecipes(data.recipes);
+
+                localStorage.setItem('topRecipes', JSON.stringify(data.recipes));
+
+              } catch (error) {
+                console.error('Error fetching recipes:', error.message);
+              }
+        }
+
+        
+      };
+      
+
+    useEffect(()=>{
+        fetchTopRecipes();
+    },[])
+
+
   return (
     <div className='HomeContainer'>
-        {/*  */}
         {/* hero section */}
         <div className='HeroSection'>
             <div className='HeroContainer'>
@@ -31,9 +65,9 @@ function Home() {
                 <h1 className='heading'>Top Recipes</h1>
                 <div className='FoodContiner'>
                     {
-                        foodData.map((recipe)=>{
+                        topRecipes.map((recipe, key)=>{
                             return(
-                                <Link to={"/recipe/"+recipe.id}>
+                                <Link className='FoodItemLinks' key={key} to={"/recipe/"+recipe.id}>
                                     <FoodItem data={recipe}/>
                                 </Link>
                             )
