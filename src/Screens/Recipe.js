@@ -39,7 +39,7 @@ function Recipe() {
             <img className='RecipeImage' src={data.image} alt={data.title}/>
             <div className='RightContainer'>
               <h1>Instructions:</h1>
-              <p>{data.instructions}</p>
+              <p>{data.instructions}</p> 
               <div className='RecipeIngredients'>
               {
                 data.extendedIngredients.map((item)=>{
