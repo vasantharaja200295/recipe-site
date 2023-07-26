@@ -1,13 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .FoodCardContainer{
-    height:400px;
-    width: 300px;
-    background-color:darkgray;
+    height: 380px;
+    width: 320px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     box-sizing: border-box;
-    padding: 2%;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
     -moz-box-shadow: 3px 3px 10px 3px #dddddd;
@@ -16,8 +14,63 @@
 }
 
 .foodImage{
-    height: 70%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.lowerContainer{
+    height: 70px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-inline: 10px;
+}
+
+.chip{
+    background-color: rgb(245, 43, 43);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width:auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color:aliceblue
+}
+
+.title{
+    margin-left: 10px;
+    position: relative;
+    bottom:10px;
+}
+
+.clock{
+    height: 20px;
+    width: 20px;
+}
+
+.clockContainer{
+    height:60%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.foodTime{
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Poppins';
+}
+
+.foodType{
+    font-weight: 600;
+    font-family: 'Poppins';
 }

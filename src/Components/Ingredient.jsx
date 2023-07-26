@@ -1,13 +1,9 @@
 import React from 'react'
-import { styled } from 'styled-components'
+import { styled } from 'styled-components';
+import { captialize } from '../functions/subfunctions.js';
 
 
-function Ingredient(props) {
-    console.log(props.ingre)
-    function captialize(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-  
+function Ingredient(props) { 
 
     if (props.ingre == null){
     }else{

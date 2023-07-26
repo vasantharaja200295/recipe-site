@@ -27,14 +27,11 @@ function Home() {
                 const data = response.data; 
                 console.log(data);
                 setTopRecipes(data.recipes);
-
                 localStorage.setItem('topRecipes', JSON.stringify(data.recipes));
-
               } catch (error) {
                 console.error('Error fetching recipes:', error.message);
               }
-        }
-
+        } 
         
       };
       
@@ -42,6 +39,7 @@ function Home() {
     useEffect(()=>{
         fetchTopRecipes();
     },[])
+
 
 
   return (
