@@ -22,7 +22,7 @@ function Home() {
             try {
 
                 const response = await axios.get(
-                  'https://api.spoonacular.com/recipes/random?apiKey=d0c921905eb148eca448cd8ab07de352&number=9'
+                  'https://api.spoonacular.com/recipes/random?apiKey=d0c921905eb148eca448cd8ab07de352&number=8'
                 );
                 const data = response.data; 
                 console.log(data);
