@@ -9,7 +9,7 @@ function Ingredient(props) {
     }else{
         return (
             <Card>
-                <img src={props.ingre.image} alt={props.ingre.name}/>
+                <img src={"https://spoonacular.com/cdn/ingredients_100x100/"+props.ingre.image} alt={props.ingre.name}/>
                 <div>
                     <h3>{captialize(props.ingre.name)}</h3>
                     <p>{props.ingre.originalString}</p>
@@ -37,7 +37,7 @@ const Card = styled.div`
     margin:5px;
     img{
         height:100%;
-        width:30%;
+        width:auto;
         border-radius:7px;
         object-fit:cover;
         margin-right:10px;
